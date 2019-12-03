@@ -8,8 +8,10 @@ public class Exercise_11_4 {
         System.out.println("Enter numbers to be added to the array list: ");
 
         // Loop that adds integers to the array list
-        while (input.nextInt() != 0){
-            list.add(input.nextInt());
+        Integer number = input.nextInt();
+        while (number != 0){
+            list.add(number);
+            number = input.nextInt();
         }
 
         // Print the max result
@@ -18,10 +20,11 @@ public class Exercise_11_4 {
 
     // Method for finding the max integer
     public static Integer max(ArrayList<Integer> list){
-        int max = 0;
+        Integer max = 0;
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) > max)
                 max = list.get(i);
         }
-        return max;}
+        return max;
+    }
 }
