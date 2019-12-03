@@ -46,6 +46,6 @@ public class Listing_11_8 {
         list.add(new Circle(3));
 
         // Display the area of the first circle in the list
-        System.out.println("The area of the circle? " + list.get(0).getArea());
+        // System.out.println("The area of the circle? " + list.get(0).getArea());
     }
 }
